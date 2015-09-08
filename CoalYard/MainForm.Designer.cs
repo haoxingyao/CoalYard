@@ -32,13 +32,13 @@
             this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.axTOCControl1 = new ESRI.ArcGIS.Controls.AxTOCControl();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabMap = new System.Windows.Forms.TabPage();
-            this.tabSence = new System.Windows.Forms.TabPage();
             this.axMapControl1 = new ESRI.ArcGIS.Controls.AxMapControl();
-            this.axTOCControl1 = new ESRI.ArcGIS.Controls.AxTOCControl();
-            this.tabGlobe = new System.Windows.Forms.TabPage();
+            this.tabSence = new System.Windows.Forms.TabPage();
             this.axSceneControl1 = new ESRI.ArcGIS.Controls.AxSceneControl();
+            this.tabGlobe = new System.Windows.Forms.TabPage();
             this.axGlobeControl1 = new ESRI.ArcGIS.Controls.AxGlobeControl();
             this.axLicenseControl1 = new ESRI.ArcGIS.Controls.AxLicenseControl();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
@@ -46,13 +46,13 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axTOCControl1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabMap.SuspendLayout();
-            this.tabSence.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axTOCControl1)).BeginInit();
-            this.tabGlobe.SuspendLayout();
+            this.tabSence.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axSceneControl1)).BeginInit();
+            this.tabGlobe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axGlobeControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl1)).BeginInit();
             this.SuspendLayout();
@@ -91,6 +91,15 @@
             this.splitContainer1.SplitterDistance = 215;
             this.splitContainer1.TabIndex = 2;
             // 
+            // axTOCControl1
+            // 
+            this.axTOCControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axTOCControl1.Location = new System.Drawing.Point(0, 0);
+            this.axTOCControl1.Name = "axTOCControl1";
+            this.axTOCControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl1.OcxState")));
+            this.axTOCControl1.Size = new System.Drawing.Size(215, 244);
+            this.axTOCControl1.TabIndex = 0;
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabMap);
@@ -114,6 +123,15 @@
             this.tabMap.Text = "Map";
             this.tabMap.UseVisualStyleBackColor = true;
             // 
+            // axMapControl1
+            // 
+            this.axMapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axMapControl1.Location = new System.Drawing.Point(3, 3);
+            this.axMapControl1.Name = "axMapControl1";
+            this.axMapControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl1.OcxState")));
+            this.axMapControl1.Size = new System.Drawing.Size(412, 212);
+            this.axMapControl1.TabIndex = 0;
+            // 
             // tabSence
             // 
             this.tabSence.Controls.Add(this.axSceneControl1);
@@ -125,23 +143,14 @@
             this.tabSence.Text = "Sence";
             this.tabSence.UseVisualStyleBackColor = true;
             // 
-            // axMapControl1
+            // axSceneControl1
             // 
-            this.axMapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axMapControl1.Location = new System.Drawing.Point(3, 3);
-            this.axMapControl1.Name = "axMapControl1";
-            this.axMapControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl1.OcxState")));
-            this.axMapControl1.Size = new System.Drawing.Size(412, 212);
-            this.axMapControl1.TabIndex = 0;
-            // 
-            // axTOCControl1
-            // 
-            this.axTOCControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axTOCControl1.Location = new System.Drawing.Point(0, 0);
-            this.axTOCControl1.Name = "axTOCControl1";
-            this.axTOCControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl1.OcxState")));
-            this.axTOCControl1.Size = new System.Drawing.Size(215, 244);
-            this.axTOCControl1.TabIndex = 0;
+            this.axSceneControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axSceneControl1.Location = new System.Drawing.Point(3, 3);
+            this.axSceneControl1.Name = "axSceneControl1";
+            this.axSceneControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axSceneControl1.OcxState")));
+            this.axSceneControl1.Size = new System.Drawing.Size(412, 212);
+            this.axSceneControl1.TabIndex = 0;
             // 
             // tabGlobe
             // 
@@ -152,15 +161,6 @@
             this.tabGlobe.TabIndex = 2;
             this.tabGlobe.Text = "Globe";
             this.tabGlobe.UseVisualStyleBackColor = true;
-            // 
-            // axSceneControl1
-            // 
-            this.axSceneControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axSceneControl1.Location = new System.Drawing.Point(3, 3);
-            this.axSceneControl1.Name = "axSceneControl1";
-            this.axSceneControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axSceneControl1.OcxState")));
-            this.axSceneControl1.Size = new System.Drawing.Size(412, 212);
-            this.axSceneControl1.TabIndex = 0;
             // 
             // axGlobeControl1
             // 
@@ -192,18 +192,19 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axTOCControl1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabMap.ResumeLayout(false);
-            this.tabSence.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axTOCControl1)).EndInit();
-            this.tabGlobe.ResumeLayout(false);
+            this.tabSence.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axSceneControl1)).EndInit();
+            this.tabGlobe.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axGlobeControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl1)).EndInit();
             this.ResumeLayout(false);
