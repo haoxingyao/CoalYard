@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using ESRI.ArcGIS;
+
 namespace CoalYard
 {
     static class Program
@@ -14,9 +16,19 @@ namespace CoalYard
         [STAThread]
         static void Main()
         {
+            //初始化ArcGIS 
+            if (!RuntimeManager.Bind(ProductCode.Engine))
+            {
+                if (!RuntimeManager.Bind(ProductCode.Desktop))
+                {
+                    MessageBox.Show("Unable to bind to ArcGIS runtime. Application will be shut down.");
+                    return;
+                }
+            }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }
