@@ -19,7 +19,7 @@ namespace CoalYard
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }
